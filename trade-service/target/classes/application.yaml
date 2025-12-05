@@ -1,0 +1,18 @@
+server:
+  port: 8084   #
+hm:
+  db:
+    datebase: hm-trade
+  swagger:
+    title: "黑马商城交易服务接口文档"
+    package: com.hmall.trade.controller
+spring:
+  rabbitmq:
+    host: 192.168.200.130
+    port: 5672
+    virtual-host: /hmall
+    username: hmall
+    password: 123
+  cloud:
+    nacos:
+      server-addr: 192.168.200.130:8848
