@@ -2,36 +2,14 @@
 
 #### 介绍
 商城项目
+一个基于微服务架构的B2C模式综合性在线销售平台（仿京东商城）。总体分为前台购物模块和后台时间管理模
+块。
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### 主要功能
+使用Nacos实现服务注册和发现，配置管理功能，使用OpenFeign进行服务间的通信。
+使用Gateway网关作为微服务的统一入口，并使用自定义GlobalFilter网关过滤器和OpenFeign实现网关登录校
+验。
+使用Sentinel进行请求限流、线程隔离、服务熔断实现服务保护。
+使用Seata作为分布式事务解决方案，提供高性能和简单易用的分布式事务服务。
+使用RabbitMQ消息队列进行异步调用，保证数据的可靠性与持久性。延迟消息插件实现取消超时订单功能。
+使用Elasticsearch实现数据的查询，并对查询结果进行排序、分页、高亮、聚合的处理
